@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Simple</h1>
+        <form id="calc-form" action="calculadora.php" method="POST">
+            <input type="number" name="num1" placeholder="Número 1" required>
+            <input type="number" name="num2" placeholder="Número 2" required>
+            <div class="operations">
+                <button type="submit" name="operacion" value="sumar">Sumar</button>
+                <button type="submit" name="operacion" value="restar">Restar</button>
+                <button type="submit" name="operacion" value="multiplicar">Multiplicar</button>
+                <button type="submit" name="operacion" value="dividir">Dividir</button>
+            </div>
+        </form>
+        <div id="resultado">
+        </div>
+    </div>
+</body>
+</html>
